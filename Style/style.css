@@ -88,25 +88,61 @@ header {
 }
 /*mobile menu styles*/
 @media (max-width: 768px) {
-    .nav-links{
-        display: none;
-        flex-direction:column;
-        position: absolute;
-        top: 60px;
-        left: 0;
+    .main-nav ul {
+        display: block;
+        padding: 0;
+        gap: 0;
+    }
+    .nav-links {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 2001;
         width: 100%;
-        padding: 1rem;
-        box-shadow: 999;
-        background-color: rgba(0, 0, 0, 0.8); 
-
+        padding: 0;
     }
-
-    .nav-links.show{
-        display:flex;
+    .nav-links.show {
+        max-height: 500px;
     }
-
+    .nav-link {
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        color: var(--accent-color);
+        background: none;
+        border: none;
+        outline: none;
+        transition: background 0.2s;
+    }
+    .nav-link:active, .nav-link:focus {
+        background: rgba(5,186,186,0.15);
+        color: #fff;
+    }
     .menu-toggle {
         display: block;
+        margin: 0.5rem 0 0.5rem 1rem;
+    }
+    .project-container {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+    .project-item {
+        max-width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    section, .skills-container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .cta-button {
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
     }
 }
 .resume-button {
