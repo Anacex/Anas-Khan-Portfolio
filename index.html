@@ -20,18 +20,14 @@
 <body id="home">
     <header>
         <nav class="main-nav">
-            <div class="nav-container">
-                <div class="logo">M. Anas Khan</div>
-                <button class="menu-toggle" on-click="toggleMenu()">☰</button>
-                <ul class="nav-links" id="navLinks">
-                    <li class="active"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li><a class="nav-link" href="pages/projects.html">PROJECTS</a></li>
-                    <li><a class="nav-link" href="pages/skills.html">SKILLS</a></li>
-                    <li><a class="nav-link" href="pages/aboutme.html">ABOUT ME</a></li>
-                    <li><a class="nav-link resume-button" href="Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
-                </ul>
-            </div>
-            
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li class="active"><a class="nav-link" href="index.html">HOME</a></li>
+                <li><a class="nav-link" href="pages/projects.html">PROJECTS</a></li>
+                <li><a class="nav-link" href="pages/skills.html">SKILLS</a></li>
+                <li><a class="nav-link" href="pages/aboutme.html">ABOUT ME</a></li>
+                <li><a class="nav-link resume-button" href="Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -59,5 +55,16 @@
             </div>
         </p>
     </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+});
+</script>
 </body>
 </html>

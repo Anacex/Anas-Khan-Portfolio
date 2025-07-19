@@ -11,13 +11,14 @@
 <body id="skills">
     <header>
         <nav class="main-nav">
-            <ul>
-                <li><a class="nav-link" href="../index.html">HOME</a></li>
-                <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
-                <li class="active"><a class="nav-link" href="skills.html">SKILLS</a></li>
-                <li><a class="nav-link" href="aboutme.html">ABOUT ME</a></li>
-                <li><a class="nav-link resume-button" href="../Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
-            </ul>
+          <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+          <ul class="nav-links">
+            <li class="active"><a class="nav-link" href="skills.html">SKILLS</a></li>
+            <li><a class="nav-link" href="projects.html">PROJECTS</a></li>
+            <li><a class="nav-link" href="aboutme.html">ABOUT ME</a></li>
+            <li><a class="nav-link" href="../index.html">HOME</a></li>
+            <li><a class="nav-link resume-button" href="../Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
+          </ul>
         </nav>
     </header>
 
@@ -317,6 +318,15 @@ document.querySelectorAll('.skill-category').forEach(category => {
     const isExpanded = this.getAttribute('aria-expanded') === 'true';
     this.setAttribute('aria-expanded', !isExpanded);
   });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
 });
 </script>
 </body>
