@@ -16,7 +16,7 @@ function Navbar() {
           <li><ScrollLink className="nav-link" to="projects" smooth={true} duration={500} offset={-80}>PROJECTS</ScrollLink></li>
           <li><ScrollLink className="nav-link" to="skills" smooth={true} duration={500} offset={-80}>SKILLS</ScrollLink></li>
           <li><ScrollLink className="nav-link" to="about" smooth={true} duration={500} offset={-80}>ABOUT ME</ScrollLink></li>
-          <li><a className="nav-link resume-button" href="/Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
+          <li><a className="nav-link resume-button" href="Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
         </ul>
       </nav>
     </header>
