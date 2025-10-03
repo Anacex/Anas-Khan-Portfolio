@@ -1,0 +1,156 @@
+/* ==============================
+   GLOBAL ROOT
+   ============================== */
+  #root {
+   max-width: none;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+ }
+  
+  /* ==============================
+     NAVBAR FIXES
+     ============================== */
+  header {
+    width: 100%;         
+    margin: 0;           
+    padding: 0;        
+  }
+  
+  .main-nav {
+    width: 100%;        
+    margin: 0;          
+    padding: 0 1rem;     
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    text-align:right;    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ==============================
+     NAV RIGHT EDGE ALIGNMENT
+     ============================== */
+  header, .main-nav, .nav-container { padding-right: 0 !important; }
+  .main-nav ul { padding-right: 0 !important; }
+  .main-nav li:last-child { margin-right: 0 !important; }
+  
+  /* ==============================
+     SECTION FIXES
+     ============================== */
+  .section {
+    padding: 60px 20px;   
+    min-height: auto;     
+    overflow: hidden;     
+  }
+  
+  .about-container {
+    max-width: 900px;     
+    margin: 0 auto;
+    padding-bottom: 50px; 
+  }
+  
+  /* ==============================
+     PAGE HEADINGS
+     ============================== */
+  .page-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #b085f5; 
+  }
+  
+  /* ==============================
+     CARDS & LOGO
+     ============================== */
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  /* floating bubble style */
+.email-popup {
+  position: fixed;
+  right: 30px;       /* bubble on bottom-right corner */
+  bottom: 50px;      /* above screen edge */
+  background: #cc9de6;
+  color: black;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 9999;
+}
+
+.copy-btn {
+  background: #ddd;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0s ease;
+}
+
+.copy-btn:hover {
+  background: #38bdf8;
+}
+.edu-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a78bfa;
+  border-bottom: 2px solid #a78bfa;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Satisfy', cursive; letter-spacing: 1px; margin: 2rem 0 1rem; text-shadow: 0 2px 12px rgba(167, 139, 250, 0.25);
+}
+
+.interest-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a78bfa;
+  border-bottom: 2px solid #a78bfa;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  font-family: 'Satisfy', cursive; letter-spacing: 1px; margin: 2rem 0 1rem; text-shadow: 0 2px 12px rgba(167, 139, 250, 0.25);
+}
