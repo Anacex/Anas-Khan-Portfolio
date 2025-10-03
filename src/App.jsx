@@ -27,7 +27,7 @@ function Navbar() {
 function Hero() {
   return (
     <div className="hero">
-      <img className="hero-image" src="/images/mypic.png" alt="Professional headshot of M. Anas Khan" />
+      <img className="hero-image" src="images/mypic.png" alt="Professional headshot of M. Anas Khan" />
       <h1 className="hero-title">M. Anas Khan</h1>
       <h2 className="hero-profession">Software Engineer</h2>
       <p className="hero-tagline">
@@ -63,7 +63,7 @@ function Projects() {
             <li>Performance: Used Redis caching and asynchronous operations to optimize API response times.</li>
           </ul>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anacex/Kiryana-Store-Management-System-Backend" className="project-link">View Project</a>
-          <img src="/images/kiryanastore.png" alt="Kiryana Store Management System Screenshot" className="project-image" />
+          <img src="images/kiryanastore.png" alt="Kiryana Store Management System Screenshot" className="project-image" />
         </div>
         <div className="project-item">
           <h3>Visual Daily Planner MVP</h3>
@@ -79,7 +79,7 @@ function Projects() {
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anacex/Autism-visual-routine-planner" className="project-link">GitHub</a>
             <a target="_blank" rel="noopener noreferrer" href="https://autism-visual-routine.vercel.app/login" className="project-link">Live (Vercel)</a>
           </div>
-          <img src="/images/autism-tracker.png" alt="Visual Daily Planner screenshot" className="project-image" />
+          <img src="images/autism-tracker.png" alt="Visual Daily Planner screenshot" className="project-image" />
         </div>
         <div className="project-item">
           <h3>Deep Learning Model: Bacteria Image Classification System</h3>
@@ -89,7 +89,7 @@ function Projects() {
             <li>Interface: Created Streamlit prototype for image upload and prediction.</li>
           </ul>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anacex/Bacteria-Image-Classification-Deep-Learning-Model" className="project-link">View Project</a>
-          <img src="/images/test.png" alt="Bacteria Image Classification Screenshot" className="project-image" />
+          <img src="images/test.png" alt="Bacteria Image Classification Screenshot" className="project-image" />
         </div>
         <div className="project-item">
           <h3>Web-frontend: Snakey Game</h3>
@@ -275,7 +275,7 @@ function Skills() {
             <button className="bubble-close" aria-label="Close" onClick={() => setActiveBubble(null)}>✕</button>
 
             <div className="bubble-expanded-header">
-              <img className="bubble-icon-large" src={active.items[0]?.icon || '/images/placeholder.png'} alt="" />
+              <img className="bubble-icon-large" src={active.items[0]?.icon || 'images/placeholder.png'} alt="" />
               <h3>{active.title}</h3>
             </div>
 
