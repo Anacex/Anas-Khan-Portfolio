@@ -198,7 +198,7 @@ header {
 .hero {
   height: 100vh;  
   width: 100%;
-  background: url('images/uni.jpg') no-repeat center center/cover;
+  background: url('/images/uni.jpg') no-repeat center center/cover;
 
   display: flex;                 /* Flexbox centering */
   flex-direction: column;        /* Stack elements vertically */

@@ -37,7 +37,7 @@ function Hero() {
       <div className="hero-cta">
         <EmailButton />   {/* 👈 replaced old button */}
         <a 
-          href="/Muhammad_Anas_Khan_Resume.pdf" 
+          href="Muhammad_Anas_Khan_Resume.pdf" 
           className="cta-button secondary" 
           download 
           target="_blank" 
