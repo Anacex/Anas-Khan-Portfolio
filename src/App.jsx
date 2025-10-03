@@ -138,10 +138,10 @@ function Skills() {
       title: 'Programming Languages', 
       size: 'large', pos: { top: '10%', left: '15%' },
       items: [
-        { name: 'Python', icon: '/images/python.png' },
-        { name: 'JavaScript', icon: '/images/JS.png' },
-        { name: 'C/C++', icon: '/images/C.png' },
-        { name: 'Assembly (x86 - Irvine32)', icon: '/images/assembly.png' }
+        { name: 'Python', icon: 'images/python.png' },
+        { name: 'JavaScript', icon: 'images/JS.png' },
+        { name: 'C/C++', icon: 'images/C.png' },
+        { name: 'Assembly (x86 - Irvine32)', icon: 'images/assembly.png' }
       ]
     },
     { 
@@ -149,15 +149,15 @@ function Skills() {
       title: 'Web Development', 
       size: 'medium', pos: { top: '35%', left: '5%' },
       items: [
-        { name: 'HTML', icon: '/images/html.png' },
-        { name: 'CSS', icon: '/images/css.png' },
-        { name: 'JavaScript', icon: '/images/JS.png' },
-        { name: 'Tailwind CSS', icon: '/images/tailwindcss.png' },
-        { name: 'JWT', icon: '/images/jwt.png' },
-        { name: 'Express-JS', icon: '/images/Expressjs.png' },
-        { name: 'MongoDB', icon: '/images/mongodb.png' },
-        { name: 'MySQL', icon: '/images/mysql.png' },
-        { name: 'PostgreSQL', icon: '/images/postgresql.png' }
+        { name: 'HTML', icon: 'images/html.png' },
+        { name: 'CSS', icon: 'images/css.png' },
+        { name: 'JavaScript', icon: 'images/JS.png' },
+        { name: 'Tailwind CSS', icon: 'images/tailwindcss.png' },
+        { name: 'JWT', icon: 'images/jwt.png' },
+        { name: 'Express-JS', icon: 'images/Expressjs.png' },
+        { name: 'MongoDB', icon: 'images/mongodb.png' },
+        { name: 'MySQL', icon: 'images/mysql.png' },
+        { name: 'PostgreSQL', icon: 'images/postgresql.png' }
       ]
     },
     { 
@@ -165,13 +165,13 @@ function Skills() {
       title: 'ML & DL', 
       size: 'small', pos: { top: '60%', left: '20%' },
       items: [
-        { name: 'Scikit-learn', icon: '/images/scikitlearn.png' },
-        { name: 'TensorFlow', icon: '/images/TensorFlow.png' },
-        { name: 'PyTorch', icon: '/images/pytorch.png' },
-        { name: 'Pandas', icon: '/images/pandas.png' },
-        { name: 'NumPy', icon: '/images/numpy.png' },
-        { name: 'CNNs', icon: '/images/neurals.png' },
-        { name: 'Supervised/Unsupervised', icon: '/images/mlconcepts.png' }
+        { name: 'Scikit-learn', icon: 'images/scikitlearn.png' },
+        { name: 'TensorFlow', icon: 'images/TensorFlow.png' },
+        { name: 'PyTorch', icon: 'images/pytorch.png' },
+        { name: 'Pandas', icon: 'images/pandas.png' },
+        { name: 'NumPy', icon: 'images/numpy.png' },
+        { name: 'CNNs', icon: 'images/neurals.png' },
+        { name: 'Supervised/Unsupervised', icon: 'images/mlconcepts.png' }
       ]
     },
     { 
@@ -179,8 +179,8 @@ function Skills() {
       title: 'Parallel & Distributed Computing', 
       size: 'medium', pos: { top: '20%', left: '70%' },
       items: [
-        { name: 'OpenMP', icon: '/images/OpenMP.png' },
-        { name: 'MPI', icon: '/images/MPI.jpg' }
+        { name: 'OpenMP', icon: 'images/OpenMP.png' },
+        { name: 'MPI', icon: 'images/MPI.jpg' }
       ]
     },
     { 
@@ -204,12 +204,12 @@ function Skills() {
         { 
           name: 'GitHub version control', 
           desc: 'Collaborated on projects and tracked versions.', 
-          icon: '/images/git.png' 
+          icon: 'images/git.png' 
         },
         { 
           name: 'Development Tools', 
           desc: 'Visual Studio Code, PyCharm, Jupyter Notebook, Microsoft Visual Studio', 
-          icon: '/images/ides.png' 
+          icon: 'images/ides.png' 
         }
       ]
     },
@@ -218,9 +218,9 @@ function Skills() {
       title: 'Speaking Languages', 
       size: 'medium', pos: { top: '40%', left: '85%' },
       items: [
-        { name: 'English (Fluent)', icon: '/images/english.png' },
-        { name: 'Urdu (Native)', icon: '/images/urdu.png' },
-        { name: 'German (Beginner)', icon: '/images/german.jpeg' }
+        { name: 'English (Fluent)', icon: 'images/english.png' },
+        { name: 'Urdu (Native)', icon: 'images/urdu.png' },
+        { name: 'German (Beginner)', icon: 'images/german.jpeg' }
       ]
     }
   ];
