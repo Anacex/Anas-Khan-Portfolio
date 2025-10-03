@@ -100,7 +100,7 @@ function Projects() {
           </ul>
           <a href="https://github.com/Anacex/Snakey-JS" className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
           <video className="project-image" controls aria-label="Snakey Game gameplay">
-            <source src="/images/snakey.mp4" type="video/mp4" />
+            <source src="images/snakey.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="project-item">
@@ -112,7 +112,7 @@ function Projects() {
           </ul>
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anacex/OOP-Pacman-Game" className="project-link">View Project</a>
           <video className="project-image" controls aria-label="PACMAN Game gameplay">
-            <source src="/images/pacman.mp4" type="video/mp4" />
+            <source src="images/pacman.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
