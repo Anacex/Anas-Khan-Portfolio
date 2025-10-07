@@ -2,23 +2,86 @@ import './App.css'
 import { Link as ScrollLink, Element as Section, animateScroll } from 'react-scroll'
 import { useState, useEffect } from 'react'
 import EmailButton from "./EmailButton";
+import { easeInOut } from 'framer-motion';
 
 function Navbar() {
+  const [navOpen, setNavOpen] = useState(false);
+
+  const closeNav = () => setNavOpen(false);
+
   return (
     <header>
-      <nav className="main-nav nav-container">
-        <button className="menu-toggle" aria-label="Toggle navigation" onClick={() => {
-          const links = document.querySelector('.nav-links');
-          if (links) links.classList.toggle('show');
-        }}>☰</button>
-        <ul className="nav-links">
-          <li className="active"><ScrollLink className="nav-link" to="home" smooth={true} duration={500} offset={-80}>HOME</ScrollLink></li>
-          <li><ScrollLink className="nav-link" to="projects" smooth={true} duration={500} offset={-80}>PROJECTS</ScrollLink></li>
-          <li><ScrollLink className="nav-link" to="skills" smooth={true} duration={500} offset={-80}>SKILLS</ScrollLink></li>
-          <li><ScrollLink className="nav-link" to="about" smooth={true} duration={500} offset={-80}>ABOUT ME</ScrollLink></li>
-          <li><a className="nav-link resume-button" href="Muhammad_Anas_Khan_Resume.pdf" download target="_blank" rel="noopener noreferrer">RESUME</a></li>
+      <button
+        className="menu-toggle"
+        id="menuToggle"
+        onClick={() => setNavOpen(!navOpen)}
+      >
+        ☰
+      </button>
+      <nav className={`side-nav${navOpen ? ' open' : ''}`} id="sideNav">
+        <ul>
+          <li>
+            <ScrollLink
+              to="home"
+              smooth="easeInOutExpo"
+              duration={1000}
+              className="nav-link"
+              onClick={closeNav}
+            >
+              Home
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="projects"
+              smooth="easeInOutExpo"
+              duration={1000}
+              className="nav-link"
+              onClick={closeNav}
+            >
+              Projects
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="skills"
+              smooth="easeInOutExpo"
+              duration={1000}
+              className="nav-link"
+              onClick={closeNav}
+            >
+              Skills
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="about"
+              smooth="easeInOutExpo"
+              duration={1000}
+              className="nav-link"
+              onClick={closeNav}
+            >
+              About Me
+            </ScrollLink>
+          </li>
+          <li className="nav-resume">
+            <a 
+              href="Muhammad_Anas_Khan_Resume.pdf"
+              className="cta-button secondary"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
       </nav>
+      <div
+        className={`nav-overlay${navOpen ? ' show' : ''}`}
+        id="navOverlay"
+        onClick={closeNav}
+      ></div>
     </header>
   )
 }
@@ -275,7 +338,6 @@ function Skills() {
             <button className="bubble-close" aria-label="Close" onClick={() => setActiveBubble(null)}>✕</button>
 
             <div className="bubble-expanded-header">
-              <img className="bubble-icon-large" src={active.items[0]?.icon || 'images/placeholder.png'} alt="" />
               <h3>{active.title}</h3>
             </div>
 
