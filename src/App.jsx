@@ -279,7 +279,7 @@ function Skills() {
     { 
       id: 'lang-speaking', 
       title: 'Speaking Languages', 
-      size: 'medium', pos: { top: '40%', left: '85%' },
+      size: 'medium', pos: { top: '40%', left: '55%' },
       items: [
         { name: 'English (Fluent)', icon: 'images/english.png' },
         { name: 'Urdu (Native)', icon: 'images/urdu.png' },
