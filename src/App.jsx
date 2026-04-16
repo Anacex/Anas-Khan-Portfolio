@@ -58,6 +58,8 @@ const sectionMotion = {
   transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
 }
 
+const HERO_PHOTO_SRC = `${import.meta.env.BASE_URL}images/cropped.jpg`
+
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false)
   const closeNav = () => setNavOpen(false)
@@ -286,7 +288,7 @@ function Hero() {
           >
             <img
               className="hero-avatar-photo"
-              src="public/images/cropped.jpg"
+              src={HERO_PHOTO_SRC}
               alt="Portrait of M. Anas Khan"
               width={220}
               height={220}
@@ -477,7 +479,7 @@ function Projects() {
                 ))}
               </ul>
               {p.proprietary ? (
-                <p className="project-proprietary">Proprietary — details available on request.</p>
+                <p className="project-proprietary">Proprietary — skills demonstratable upon request.</p>
               ) : p.links ? (
                 <div className="project-links">
                   {p.links.map((l) => (
