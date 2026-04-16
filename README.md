@@ -1,16 +1,23 @@
-# React + Vite
+# M. Anas Khan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite single-page portfolio with animated background, project cards, experience timeline, and a contact form.
 
-Currently, two official plugins are available:
+## Contact form (email to your inbox)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Messages are sent through [Web3Forms](https://web3forms.com) when an access key is configured (free tier, no backend code).
 
-## React Compiler
+1. Sign up at [web3forms.com](https://web3forms.com) and verify **anacekhanx@gmail.com** (or whichever address should receive mail).
+2. Copy your access key.
+3. In the project root, create `.env` (see `.env.example`):
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   `VITE_WEB3FORMS_ACCESS_KEY=your_key_here`
 
-## Expanding the ESLint configuration
+4. Run `npm run dev` or rebuild with `npm run build`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Without a key, **Submit** opens the visitor’s email app with **To**, **Subject**, and **Body** prefilled (same fields as the form).
+
+## Scripts
+
+- `npm run dev` — local dev server  
+- `npm run build` — production build to `dist/`  
+- `npm run deploy` — deploy to GitHub Pages (see `package.json` `homepage`)
